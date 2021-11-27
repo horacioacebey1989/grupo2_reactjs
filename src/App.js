@@ -6,6 +6,7 @@ import Home from './components/pages/home/home'
 import UserList from './components/userList/userList'
 import User from './components/pages/user/user'
 import NewUser from './components/pages/user/newUser'
+import TipoTurismo from './components/pages/tipoTurismo/tipoTurismo'
 
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
@@ -20,6 +21,7 @@ function App() {
               <Route path='/users' element={<UserList/>}/>
               <Route path='/user/:userId' element={<User/>}/>
               <Route path='/newUser' element={<NewUser/>}/>
+              <Route path='/tipoTurismo' element={<TipoTurismo/>}/>
           </Routes>
       </div>
     </Router>
