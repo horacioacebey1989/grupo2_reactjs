@@ -1,0 +1,132 @@
+.proveedor{
+    flex: 4;
+}
+.proveedorTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.proveedorAddButton{
+    width: 80px;
+    border: none;
+    padding: 5px;
+    margin-right: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.proveedorContainer{
+    display: flex;
+}
+
+.proveedorShow{
+    flex: 1;
+    padding: 20px;
+    -webkit-box-shadow: 1px 1px 33px -3px #000000; 
+    box-shadow: 1px 1px 33px -3px #000000;
+}
+.proveedorUpdate{
+    flex: 2;
+    padding: 20px;
+    -webkit-box-shadow: 1px 1px 33px -3px #000000; 
+    box-shadow: 1px 1px 33px -3px #000000;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.proveedorShowTop{
+    display: flex;
+    align-items: center;
+}
+.proveedorShowPic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.proveedorShowTopTitle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.proveedorShowProveedorName{
+    font-weight: 600;
+}
+
+.proveedorShowProveedorTitle{
+    font-weight: 300;
+}
+
+.proveedorShowTitle{
+    font-size: 15px;
+    font-weight:600;
+    color: gray;
+    padding-top: 10px;
+}
+
+.proveedorShowInfo{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    color: gray;
+}
+
+.proveedorShowIcon{
+    font-size: 16px;
+}
+
+.proveedorShowInfoTitle{
+    margin-left: 10px;
+}
+
+.proveedorUpdateTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.proveedorUpdateForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.proveedorUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.proveedorUpdateItem>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.proveedorUpdateInput{
+    border:none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.proveedorUpdateRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.proveedorUpdateUpload{
+    display: flex;
+    align-items: center;
+}
+
+.proveedorUpdatePic{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+} 
