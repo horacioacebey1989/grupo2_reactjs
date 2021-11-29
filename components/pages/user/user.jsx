@@ -15,7 +15,9 @@ export default function User() {
     }
 
     const handleSubmit = () =>{
+      
         if(nombre !== ''){
+
             const requesInit ={
                 method : 'PUT',
                 headers : {

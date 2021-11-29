@@ -5,6 +5,8 @@ import Home from './components/pages/home/home'
 import UserList from './components/userList/userList'
 import User from './components/pages/user/user'
 import NewUser from './components/pages/user/newUser'
+import ProveedorList from './components/proveedorList/proveedorList'
+import NewProveedor from './components/pages/proveedor/newProveedor'
 import HotelList from './components/hotelList/hotelList'
 import Hotel from './components/pages/hotel/hotel'
 import NewHotel from './components/pages/hotel/newHotel'
@@ -22,9 +24,12 @@ function App() {
               <Route path='/users' element={<UserList/>}/>
               <Route path='/user/:userId' element={<User/>}/>
               <Route path='/newUser' element={<NewUser/>}/>
+              <Route path='/proveedores' element={<ProveedorList/>}/>
+              <Route path='/newProveedor' element={<NewProveedor/>}/>
               <Route path='/hoteles' element={<HotelList/>}/>
               <Route path='/hotel/:hotelId' element={<Hotel/>}/>
               <Route path='/newHotel' element={<NewHotel/>}/>
+
               
           </Routes>
       </div>

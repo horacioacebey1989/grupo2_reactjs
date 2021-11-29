@@ -1,0 +1,31 @@
+.proveedorList{
+    flex: 4;
+}
+
+.proveedorListP{
+    display: flex;
+    align-items: center;
+}
+
+.proveedorListImage{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.proveedorListEdit{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.proveedorListDelete{
+    color: red;
+    cursor: pointer;
+}
