@@ -1,0 +1,132 @@
+.hotel{
+    flex: 4;
+}
+.hotelTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hotelAddButton{
+    width: 80px;
+    border: none;
+    padding: 5px;
+    margin-right: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.hotelContainer{
+    display: flex;
+}
+
+.hotelShow{
+    flex: 1;
+    padding: 20px;
+    -webkit-box-shadow: 1px 1px 33px -3px #000000; 
+    box-shadow: 1px 1px 33px -3px #000000;
+}
+.hotelUpdate{
+    flex: 2;
+    padding: 20px;
+    -webkit-box-shadow: 1px 1px 33px -3px #000000; 
+    box-shadow: 1px 1px 33px -3px #000000;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.hotelShowTop{
+    display: flex;
+    align-items: center;
+}
+.hotelShowPic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hotelShowTopTitle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.hotelShowHotelName{
+    font-weight: 600;
+}
+
+.hotelShowHotelTitle{
+    font-weight: 300;
+}
+
+.hotelShowTitle{
+    font-size: 15px;
+    font-weight:600;
+    color: gray;
+    padding-top: 10px;
+}
+
+.hotelShowInfo{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    color: gray;
+}
+
+.hotelShowIcon{
+    font-size: 16px;
+}
+
+.hotelShowInfoTitle{
+    margin-left: 10px;
+}
+
+.hotelUpdateTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hotelUpdateForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hotelUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.hotelUpdateItem>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.hotelUpdateInput{
+    border:none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.hotelUpdateRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotelUpdateUpload{
+    display: flex;
+    align-items: center;
+}
+
+.hotelUpdatePic{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+} 
