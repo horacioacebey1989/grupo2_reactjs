@@ -1,13 +1,13 @@
-.visitasFrecuentes {
-    flex: 4;
+.servRestaurante{
+    flex:4;
 }
 
-.visitasFrecuentesForm {
+.servRestauranteForm{
     display: flex;
     flex-direction: column;
 }
 
-.visitasFrecuentesItem {
+.servRestauranteItem{
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -15,27 +15,27 @@
     margin-right: 20px;
 }
 
-.visitasFrecuentesItem>label {
+.servRestauranteItem>label{
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 600;
     color: gray;
 }
 
-.visitasFrecuentesItem>input {
+.servRestauranteItem>input{
     height: 20px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
 }
 
-.visitasFrecuentesItem>select {
+.servRestauranteItem>select{
     height: 40px;
     border: 1px solid gray;
     border-radius: 10px;
 }
 
-.visitasFrecuentesButton {
+.servRestauranteButton{
     width: 250px;
     border: none;
     background-color: green;
