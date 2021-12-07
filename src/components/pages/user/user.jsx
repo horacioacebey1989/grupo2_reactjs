@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./user.css"
-import {PermIdentity, CalendarToday, PhoneAndroid, MailOutline, LocalActivity, Publish, Public} from '@material-ui/icons'
+import {PermIdentity, CalendarToday, PhoneAndroid, MailOutline, LocalActivity, Publish} from '@material-ui/icons'
 import { Link, useLocation } from 'react-router-dom'
 
 export default function User() {
@@ -15,7 +15,7 @@ export default function User() {
     }
 
     const handleSubmit = () =>{
-        if(nombre != ''){
+        if(nombre !== ''){
             const requesInit ={
                 method : 'PUT',
                 headers : {

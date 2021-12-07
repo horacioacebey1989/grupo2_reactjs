@@ -36,7 +36,7 @@ export default function NewUser() {
     }
 
     const handleSubmit =()=>{
-        if(username != '' && password != ''){
+        if(username !== '' && password !== ''){
             const requestInit ={
                 method : 'POST',
                 headers : {

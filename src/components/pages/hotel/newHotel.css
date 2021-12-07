@@ -1,13 +1,13 @@
-.newUser{
+.newHotel{
     flex:4;
 }
 
-.newUserForm{
+.newHotelForm{
     display: flex;
     flex-direction: column;
 }
 
-.newUserItem{
+.newHotelItem{
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -15,27 +15,27 @@
     margin-right: 20px;
 }
 
-.newUserItem>label{
+.newHotelItem>label{
     margin-bottom: 10px;
     font-size: 15px;
     font-weight: 600;
     color: gray;
 }
 
-.newUserItem>input{
+.newHotelItem>input{
     height: 20px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
 }
 
-.newUserItem>select{
+.newHotelItem>select{
     height: 40px;
     border: 1px solid gray;
     border-radius: 10px;
 }
 
-.newUserButton{
+.newHotelButton{
     width: 250px;
     border: none;
     background-color: green;

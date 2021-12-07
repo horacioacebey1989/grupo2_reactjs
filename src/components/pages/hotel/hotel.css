@@ -1,12 +1,12 @@
-.user{
+.hotel{
     flex: 4;
 }
-.userTitleContainer{
+.hotelTitleContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.userAddButton{
+.hotelAddButton{
     width: 80px;
     border: none;
     padding: 5px;
@@ -17,17 +17,17 @@
     cursor: pointer;
     font-size: 15px;
 }
-.userContainer{
+.hotelContainer{
     display: flex;
 }
 
-.userShow{
+.hotelShow{
     flex: 1;
     padding: 20px;
     -webkit-box-shadow: 1px 1px 33px -3px #000000; 
     box-shadow: 1px 1px 33px -3px #000000;
 }
-.userUpdate{
+.hotelUpdate{
     flex: 2;
     padding: 20px;
     -webkit-box-shadow: 1px 1px 33px -3px #000000; 
@@ -36,94 +36,94 @@
     margin-right: 40px;
 }
 
-.userShowTop{
+.hotelShowTop{
     display: flex;
     align-items: center;
 }
-.userShowPic{
+.hotelShowPic{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.userShowTopTitle{
+.hotelShowTopTitle{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
 }
 
-.userShowUserName{
+.hotelShowHotelName{
     font-weight: 600;
 }
 
-.userShowUserTitle{
+.hotelShowHotelTitle{
     font-weight: 300;
 }
 
-.userShowTitle{
+.hotelShowTitle{
     font-size: 15px;
     font-weight:600;
     color: gray;
     padding-top: 10px;
 }
 
-.userShowInfo{
+.hotelShowInfo{
     display: flex;
     align-items: center;
     margin: 5px 0px;
     color: gray;
 }
 
-.userShowIcon{
+.hotelShowIcon{
     font-size: 16px;
 }
 
-.userShowInfoTitle{
+.hotelShowInfoTitle{
     margin-left: 10px;
 }
 
-.userUpdateTitle{
+.hotelUpdateTitle{
     font-size: 20px;
     font-weight: 600;
 }
 
-.userUpdateForm{
+.hotelUpdateForm{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.userUpdateItem{
+.hotelUpdateItem{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
 
-.userUpdateItem>label{
+.hotelUpdateItem>label{
     margin-bottom: 5px;
     font-size: 14px;
 }
 
-.userUpdateInput{
+.hotelUpdateInput{
     border:none;
     width: 250px;
     height: 30px;
     border-bottom: 1px solid gray;
 }
 
-.userUpdateRight{
+.hotelUpdateRight{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.userUpdateUpload{
+.hotelUpdateUpload{
     display: flex;
     align-items: center;
 }
 
-.userUpdatePic{
+.hotelUpdatePic{
     width: 100px;
     height: 100px;
     border-radius: 10px;

@@ -1,12 +1,12 @@
-.user{
+.hotspot{
     flex: 4;
 }
-.userTitleContainer{
+.hotspotTitleContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.userAddButton{
+.hotspotAddButton{
     width: 80px;
     border: none;
     padding: 5px;
@@ -17,17 +17,17 @@
     cursor: pointer;
     font-size: 15px;
 }
-.userContainer{
+.hotspotContainer{
     display: flex;
 }
 
-.userShow{
+.hotspotShow{
     flex: 1;
     padding: 20px;
     -webkit-box-shadow: 1px 1px 33px -3px #000000; 
     box-shadow: 1px 1px 33px -3px #000000;
 }
-.userUpdate{
+.hotspotUpdate{
     flex: 2;
     padding: 20px;
     -webkit-box-shadow: 1px 1px 33px -3px #000000; 
@@ -36,94 +36,94 @@
     margin-right: 40px;
 }
 
-.userShowTop{
+.hotspotShowTop{
     display: flex;
     align-items: center;
 }
-.userShowPic{
+.hotspotShowPic{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.userShowTopTitle{
+.hotspotShowTopTitle{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
 }
 
-.userShowUserName{
+.hotspotShowHotspotName{
     font-weight: 600;
 }
 
-.userShowUserTitle{
+.hotspotShowHotspotTitle{
     font-weight: 300;
 }
 
-.userShowTitle{
+.hotspotShowTitle{
     font-size: 15px;
     font-weight:600;
     color: gray;
     padding-top: 10px;
 }
 
-.userShowInfo{
+.hotspotShowInfo{
     display: flex;
     align-items: center;
     margin: 5px 0px;
     color: gray;
 }
 
-.userShowIcon{
+.hotspotShowIcon{
     font-size: 16px;
 }
 
-.userShowInfoTitle{
+.hotspotShowInfoTitle{
     margin-left: 10px;
 }
 
-.userUpdateTitle{
+.hotspotUpdateTitle{
     font-size: 20px;
     font-weight: 600;
 }
 
-.userUpdateForm{
+.hotspotUpdateForm{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.userUpdateItem{
+.hotspotUpdateItem{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
 
-.userUpdateItem>label{
+.hotspotUpdateItem>label{
     margin-bottom: 5px;
     font-size: 14px;
 }
 
-.userUpdateInput{
+.hotspotUpdateInput{
     border:none;
     width: 250px;
     height: 30px;
     border-bottom: 1px solid gray;
 }
 
-.userUpdateRight{
+.hotspotUpdateRight{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.userUpdateUpload{
+.hotspotUpdateUpload{
     display: flex;
     align-items: center;
 }
 
-.userUpdatePic{
+.hotspotUpdatePic{
     width: 100px;
     height: 100px;
     border-radius: 10px;
