@@ -1,12 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import Topbar from './components/topbar/topbar'
-import SideBar from './components/sidebar/sidebar'
+import Sidebar from './components/sidebar/sidebar'
 import Home from './components/pages/home/home'
 import UserList from './components/userList/userList'
 import User from './components/pages/user/user'
 import NewUser from './components/pages/user/newUser'
-import TipoTurismo from './components/pages/tipoTurismo/tipoTurismo'
+import HotelList from './components/hotelList/hotelList'
+import Hotel from './components/pages/hotel/hotel'
+import NewHotel from './components/pages/hotel/newHotel'
+import Hotspot from './components/pages/hotspot/hotspot'
 
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
@@ -15,13 +17,17 @@ function App() {
     <Router>
         <Topbar />
         <div className='container'>
-          <SideBar />
+          <Sidebar />
           <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/users' element={<UserList/>}/>
               <Route path='/user/:userId' element={<User/>}/>
               <Route path='/newUser' element={<NewUser/>}/>
-              <Route path='/tipoTurismo' element={<TipoTurismo/>}/>
+              <Route path='/hoteles' element={<HotelList/>}/>
+              <Route path='/hotel/:hotelId' element={<Hotel/>}/>
+              <Route path='/newHotel' element={<NewHotel/>}/>
+              <Route path='/hotspot' element={<Hotspot/>}/>
+              
           </Routes>
       </div>
     </Router>

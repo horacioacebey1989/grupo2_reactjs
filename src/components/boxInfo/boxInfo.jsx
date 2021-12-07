@@ -1,10 +1,10 @@
 import React from 'react'
 import "./boxInfo.css"
-import {ArrowDownward, ArrowUpward} from '@material-ui/icons'
+import { ArrowDownward, ArrowUpward } from '@material-ui/icons'
 
 export default function boxInfo() {
-  return (
-    <div className='box'>
+    return (
+        <div className='box'>
         <div className='boxItem'>
             <span className='boxTittle'>BOX 1</span>
             <div className='boxContainer'>
@@ -33,5 +33,5 @@ export default function boxInfo() {
             <span className='downText'>Inserte un texto aqui!</span>
         </div>
     </div>
-  )
+    )
 }

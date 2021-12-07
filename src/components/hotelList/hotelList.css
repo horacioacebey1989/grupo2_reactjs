@@ -1,13 +1,13 @@
-.userList{
+.hotelList{
     flex: 4;
 }
 
-.userListUser{
+.hotelListP{
     display: flex;
     align-items: center;
 }
 
-.userListImage{
+.hotelListImage{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -15,7 +15,7 @@
     margin-right: 10px;
 }
 
-.userListEdit{
+.hotelListEdit{
     border: none;
     border-radius: 10px;
     padding: 5px 10px;
@@ -25,7 +25,7 @@
     margin-right: 10px;
 }
 
-.userListDelete{
+.hotelListDelete{
     color: red;
     cursor: pointer;
 }
