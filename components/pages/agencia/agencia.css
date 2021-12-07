@@ -1,0 +1,132 @@
+.agencia{
+    flex: 4;
+}
+.agenciaTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.agenciaAddButton{
+    width: 80px;
+    border: none;
+    padding: 5px;
+    margin-right: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.agenciaContainer{
+    display: flex;
+}
+
+.agenciaShow{
+    flex: 1;
+    padding: 20px;
+    -webkit-box-shadow: 1px 1px 33px -3px #000000; 
+    box-shadow: 1px 1px 33px -3px #000000;
+}
+.agenciaUpdate{
+    flex: 2;
+    padding: 20px;
+    -webkit-box-shadow: 1px 1px 33px -3px #000000; 
+    box-shadow: 1px 1px 33px -3px #000000;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.agenciaShowTop{
+    display: flex;
+    align-items: center;
+}
+.agenciaShowPic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.agenciaShowTopTitle{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.agenciaShowAgenciaName{
+    font-weight: 600;
+}
+
+.agenciaShowAgenciaTitle{
+    font-weight: 300;
+}
+
+.agenciaShowTitle{
+    font-size: 15px;
+    font-weight:600;
+    color: gray;
+    padding-top: 10px;
+}
+
+.agenciaShowInfo{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    color: gray;
+}
+
+.agenciaShowIcon{
+    font-size: 16px;
+}
+
+.agenciaShowInfoTitle{
+    margin-left: 10px;
+}
+
+.agenciaUpdateTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.agenciaUpdateForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.agenciaUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.agenciaUpdateItem>label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.agenciaUpdateInput{
+    border:none;
+    width: 250px;
+    height: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.agenciaUpdateRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.agenciaUpdateUpload{
+    display: flex;
+    align-items: center;
+}
+
+.agenciaUpdatePic{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+} 
