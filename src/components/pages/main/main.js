@@ -149,6 +149,7 @@ function Main() {
             )}
           </>
         ))}
+{/* SE PLANTEA DONDE QUEDARA EL MARCADOR*/}
         {newPlace && (
           <>
             <Marker
@@ -159,12 +160,13 @@ function Main() {
             >
               <Room
                 style={{
-                  fontSize: 7 * viewport.zoom,
+                  fontSize: 9 * viewport.zoom,
                   color: "tomato",
                   cursor: "pointer",
                 }}
               />
             </Marker>
+{/* SE ABRE EL POPUP CON EL FOMULARIO DEL MARCADOR*/}
             <Popup
               latitude={newPlace.lat}
               longitude={newPlace.long}
@@ -194,6 +196,7 @@ function Main() {
             </Popup>
           </>
         )}
+{/* UNA VEZ ABIERTA LA SESION SE HABILITARAN ESTOS BOTONES MARCADOR*/}
         {currentUsu_Nombre ? (
           <>
           <button onClick={handletablaTurismo}> Ver Tipo Turismo</button>

@@ -53,5 +53,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3800/api"
+  "proxy": "http://localhost:3800/api",
+  "devDependencies": {
+    "webpack": "^4.44.2"
+  }
 }

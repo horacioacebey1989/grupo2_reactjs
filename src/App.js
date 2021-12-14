@@ -10,6 +10,7 @@ import TablaServicio from './components/pages/tipoServicio/tablaServicio';
 import TablaRestaurante from  './components/pages/servRestaurante/tablaRestaurante';
 import TablaAgencia from  './components/pages/servAgencia/tablaAgencia';
 import TablaHotel from  './components/pages/servHotel/tablaHotel';
+import Weather from './components/Weather/Weather';
 import Main from './components/pages/main/main'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
@@ -18,6 +19,7 @@ function App() {
     <Router>
         <Topbar />
         <div className='container'>   
+       < Weather/>
           <Routes>
               <Route path='/' element={<Main/>}/>
               <Route path='/users' element={<UserList/>}/>

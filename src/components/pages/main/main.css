@@ -8,9 +8,9 @@
   
   label {
     width: max-content;
-    color: tomato;
+    color: rgb(211, 7, 7);
     font-size: 13px;
-    border-bottom: 0.5px solid tomato;
+    border-bottom: 0.5px solid rgb(248, 5, 5);
     margin: 3px 0;
   }
   
@@ -66,7 +66,7 @@
     padding: 5px;
     border-radius: 5px;
     color: white;
-    background-color: tomato;
+    background-color: rgb(240, 9, 9);
     cursor: pointer;
   }
   
@@ -91,14 +91,14 @@
   }
   
   .logout{
-    background-color: tomato;
+    background-color: rgb(243, 74, 44);
   }
   
   .login{
-    background-color: teal;
+    background-color: rgba(0, 128, 55, 0.639);
     margin-right: 10px;
   }
   
   .register{
-    background-color: slateblue;
+    background-color: rgb(205, 90, 90);
   }

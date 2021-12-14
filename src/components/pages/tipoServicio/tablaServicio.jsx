@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import "./tablaServicio.css";
+import ModalCrearTablaServicio from "../../pages/tipoServicio/modals/ModalCrearTablaServicio";
+import ModalEditTablaServicio from "../../pages/tipoServicio/modals/ModalEditTablaServicio";
+import ModalEliminarTablaServicio from "../../pages/tipoServicio/modals/ModalEliminarTablaServicio";
 
 
 export default function TablaServicio() {
@@ -25,25 +28,34 @@ export default function TablaServicio() {
     { field: "categoria", headerName: "Categoria", width: 250,headerStyle: { textjustify: "center" }  },
     { field: "modal", headerName: "Acciones",  width: 250, headerStyle: { textjustify: "left" },
 //Aqui en params lo que mandaremos sera los parametros qye se usaran para los modals
-    },
-  ];
-//Aqui empieza el HTML
+renderCell: (params) => {
   return (
-      <div className="Content" >
-           
-    <div className="tablatipoServicioList">
-{/*Aqui esta el Modal que abrira el formulario para crear el item 
-<ModalCreartablatipoServicio />*/}
-     
-{/*Aqui se genera las columnas automaticamente */}
-      <DataGrid
-        getRowId={(row) => row._id}
-        rows={data}
-        columns={columns}
-        pageSize={10}
-        rowsPerPageOptions={[10]}
-        // checkboxSelection
-      /></div>
-    </div>
+//Aqui se declara los 2 modals que se usaran, el primero es para editar la fila, ele segundo para eliminarla
+    <>
+      <ModalEditTablaServicio tipo={params.row._id} />
+      <ModalEliminarTablaServicio tipo={params.row._id} />
+    </>
   );
+},
+},
+];
+//Aqui empieza el HTML
+return (
+<div className="Content" >
+     
+<div className="tablatipoServicioList">
+{/*Aqui esta el Modal que abrira el formulario para crear el item */}
+<ModalCrearTablaServicio />
+
+{/*Aqui se genera las columnas automaticamente */}
+<DataGrid
+  getRowId={(row) => row._id}
+  rows={data}
+  columns={columns}
+  pageSize={10}
+  rowsPerPageOptions={[10]}
+  // checkboxSelection
+/></div>
+</div>
+);
 }

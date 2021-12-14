@@ -18,7 +18,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="left" ref={ref} {...props} />;
 });
 //Inicia el proyecto
-export default function ModalCrearRestaurante() {
+export default function ModalCrearHotel() {
   //Booleano para definir si esta o no abierto
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
@@ -79,14 +79,14 @@ export default function ModalCrearRestaurante() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          res_nombre: nombre,
-          res_descripcion: descripcion,
-          res_direccion: direccion,
-          res_telefono: telefono,
-          res_nit: nit,
+          Hotel_nombre: nombre,
+          Hotel_descripcion: descripcion,
+          Hotel_direccion: direccion,
+          Hotel_telefono: telefono,
+          Hotel_nit: nit,
         }),
       };
-      fetch("http://localhost:3800/api/addserv_restaurante", requestInit)
+      fetch("http://localhost:3800/api/addServHotel", requestInit)
         .then((res) => res.json())
         .then((res) => {
           if (res) {
@@ -110,7 +110,7 @@ export default function ModalCrearRestaurante() {
           }}
         >
           {" "}
-          Nuevo Restaurante
+          Nuevo Hotel
         </Button>
       </Grid>
       <Dialog
@@ -122,7 +122,7 @@ export default function ModalCrearRestaurante() {
         maxWidth="xs"
       >
         <DialogTitle align="center" color="black">
-          <Typography>Agregar Restaurante</Typography>
+          <Typography>Agregar Hotel</Typography>
         </DialogTitle>
         <Divider></Divider>
         <DialogContent>
