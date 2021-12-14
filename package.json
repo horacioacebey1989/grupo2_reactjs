@@ -3,17 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.2",
+    "@mui/lab": "^5.0.0-alpha.57",
+    "@mui/material": "^5.2.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.24.0",
+    "cross-spawn": "^7.0.3",
+    "date-fns": "^2.26.0",
+    "escape-util": "^0.0.1",
+    "index": "^0.4.0",
+    "parse": "^3.4.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-map-gl": "^6.1.18",
     "react-router-dom": "^6.0.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
+    "react-select": "^5.2.1",
     "recharts": "^2.1.6",
+    "timeago.js": "^4.0.0-beta.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -39,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "proxy": "http://localhost:3800/api",
+  "devDependencies": {
+    "webpack": "^4.44.2"
   }
 }

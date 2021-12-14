@@ -1,0 +1,48 @@
+.tipoTurismo{
+    flex:4;
+}
+
+.tipoTurismoForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.tipoTurismoItem{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.tipoTurismoItem>label{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+}
+
+.tipoTurismoItem>input{
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.tipoTurismoItem>select{
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.tipoTurismoButton{
+    width: 250px;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}

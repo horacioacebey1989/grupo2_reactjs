@@ -1,0 +1,16 @@
+.tablatipoServicioList{
+    display:flex;
+    flex:auto;
+    height: 550px;
+    max-width: 500%;
+    padding: 10px;
+}
+.Content{
+    width: 100%;
+}
+.newUserButton{
+    background-color: blueviolet;
+    padding: 5px 5px;
+    align-items: center;
+    color: White
+}
