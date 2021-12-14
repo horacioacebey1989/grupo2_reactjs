@@ -100,8 +100,7 @@ return(
         <label>Elegir el tipoTurismo correspondiente</label>
         </div>
         <div className='newtipoTurismoItem'>
-                <TextField
-                               
+                <TextField                               
                     placeholder="Coloque Extra Papas"
                     variant="outlined"
                     fullWidth
