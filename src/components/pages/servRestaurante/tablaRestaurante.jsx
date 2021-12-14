@@ -3,8 +3,8 @@ import { DataGrid } from "@material-ui/data-grid";
 import "./tablaRestaurante.css";
 import { Link } from "react-router-dom";
 import ModalCrearRestaurante from "../../pages/servRestaurante/modals/ModalCrearRestaurante";
-import ModalEditTablaTurismo from "../../pages/tipoTurismo/modals/ModalEditTablaTurismo";
-import ModalEliminarTablaTurismo from "../../pages/tipoTurismo/modals/ModalEliminarTablaTurismo";
+import ModalEditTablaRestaurante from "../../pages/servRestaurante/modals/ModalEditTablaRestaurante";
+import ModalEliminarTablaRestaurante from "../../pages/servRestaurante/modals/ModalEliminarTablaRestaurante";
 
 export default function TablaRestaurante() {
 //Data es donde alojaremos todos los resultados 
@@ -38,8 +38,8 @@ useEffect(() => {
         return (
 //Aqui se declara los 2 modals que se usaran, el primero es para editar la fila, ele segundo para eliminarla
           <>
-            <ModalEditTablaTurismo tipo={params.row._id} />
-            <ModalEliminarTablaTurismo tipo={params.row._id} />
+            <ModalEditTablaRestaurante tipo={params.row._id} />
+            <ModalEliminarTablaRestaurante  tipo={params.row._id} />
           </>
         );
       },

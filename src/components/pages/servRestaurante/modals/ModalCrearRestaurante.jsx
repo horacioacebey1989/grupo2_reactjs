@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Select from 'react-select';
+import Select from "react-select";
 //import "../../pages/tipoTurismo/tablaTurismo.css";
 import {
   Button,
@@ -99,111 +99,134 @@ export default function ModalCrearRestaurante() {
   };
   //Aqui empieza el HTML
   return (
-    <div className="servRestaurante">
-      <h1>Crear servRestaurantes</h1>
-      <form className="newservRestauranteForm" onSubmit={handleSubmit}>
-        <div className="newservRestauranteItem">
-          <label>Elegir el servRestaurante correspondiente</label>
-        </div>
-        <div className="newservRestauranteItem">
-        <div>
-                <button onClick={this.onclicksubmit} >Fetch data from 5000 : </button>
-                {this.state.res.map((user, i) => <div key={i}>{user.name}</div>)}
-            </div>
+    <div>
+      <Grid align="right" style={{ marginCenter: 75 }}>
+        <Button
+          variant="contained"
+          color="secondary"
+          size="medium"
+          onClick={() => {
+            handleClickOpen();
+          }}
+        >
+          {" "}
+          Nuevo Restaurante
+        </Button>
+      </Grid>
+      <Dialog
+        open={open}
+        TransitionComponent={Transition}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+        maxWidth="xs"
+      >
+        <DialogTitle align="center" color="black">
+          <Typography>Agregar Restaurante</Typography>
+        </DialogTitle>
+        <Divider></Divider>
+        <DialogContent>
+          <form onSubmit={handleSubmit}>
+            <Grid container sx={{ p: 1, m: 1 }}>
+              <TextField
+                placeholder="Coloque Nombre"
+                variant="outlined"
+                fullWidth
+                required
+                InputLabelProps={{
+                  style: { fontFamily: "Arial", color: "black" },
+                }}
+                inputProps={{
+                  style: {
+                    fontFamily: "Arial",
+                    color: "black",
+                  },
+                }}
+                onChange={(e) => {
+                  handleNombre(e);
+                }}
+              />
+              <TextField
+                placeholder="Coloque Descripcion"
+                variant="outlined"
+                fullWidth
+                required
+                InputLabelProps={{
+                  style: { fontFamily: "Arial", color: "black" },
+                }}
+                inputProps={{
+                  style: {
+                    fontFamily: "Arial",
+                    color: "black",
+                  },
+                }}
+                onChange={(e) => {
+                  handleDescripcion(e);
+                }}
+              />
+              <TextField
+                placeholder="Coloque Direccion"
+                variant="outlined"
+                fullWidth
+                required
+                InputLabelProps={{
+                  style: { fontFamily: "Arial", color: "black" },
+                }}
+                inputProps={{
+                  style: {
+                    fontFamily: "Arial",
+                    color: "black",
+                  },
+                }}
+                onChange={(e) => {
+                  handleDireccion(e);
+                }}
+              />
+              <TextField
+                placeholder="Coloque Telefono"
+                variant="outlined"
+                fullWidth
+                type="number"
+                InputLabelProps={{
+                  style: { fontFamily: "Arial", color: "black" },
+                }}
+                inputProps={{
+                  style: {
+                    fontFamily: "Arial",
+                    color: "black",
+                  },
+                }}
+                onChange={(e) => {
+                  handleTelefono(e);
+                }}
+              />
+              <TextField
+                placeholder="Coloque Nit"
+                variant="outlined"
+                fullWidth
+                type="number"
+                InputLabelProps={{
+                  style: { fontFamily: "Arial", color: "black" },
+                }}
+                inputProps={{
+                  style: {
+                    fontFamily: "Arial",
+                    color: "black",
+                  },
+                }}
+                onChange={(e) => {
+                  handleNit(e);
+                }}
+              />
+            </Grid>
 
-          <TextField
-            placeholder="Coloque Nombre"
-            variant="outlined"
-            fullWidth
-            required
-            InputLabelProps={{
-              style: { fontFamily: "Arial", color: "black" },
-            }}
-            inputProps={{
-              style: {
-                fontFamily: "Arial",
-                color: "black",
-              },
-            }}
-            onChange={(e) => {
-              handleNombre(e);
-            }}
-          />
-          <TextField
-            placeholder="Coloque Descripcion"
-            variant="outlined"
-            fullWidth
-            required
-            InputLabelProps={{
-              style: { fontFamily: "Arial", color: "black" },
-            }}
-            inputProps={{
-              style: {
-                fontFamily: "Arial",
-                color: "black",
-              },
-            }}
-            onChange={(e) => {
-              handleDescripcion(e);
-            }}
-          />
-          <TextField
-            placeholder="Coloque Direccion"
-            variant="outlined"
-            fullWidth
-            required
-            InputLabelProps={{
-              style: { fontFamily: "Arial", color: "black" },
-            }}
-            inputProps={{
-              style: {
-                fontFamily: "Arial",
-                color: "black",
-              },
-            }}
-            onChange={(e) => {
-              handleDireccion(e);
-            }}
-          />
-          <TextField
-            placeholder="Coloque Telefono"
-            variant="outlined"
-            fullWidth
-            type="number"
-            InputLabelProps={{
-              style: { fontFamily: "Arial", color: "black" },
-            }}
-            inputProps={{
-              style: {
-                fontFamily: "Arial",
-                color: "black",
-              },
-            }}
-            onChange={(e) => {
-              handleTelefono(e);
-            }}
-          />
-          <TextField
-            placeholder="Coloque Nit"
-            variant="outlined"
-            fullWidth
-            type="number"
-            InputLabelProps={{
-              style: { fontFamily: "Arial", color: "black" },
-            }}
-            inputProps={{
-              style: {
-                fontFamily: "Arial",
-                color: "black",
-              },
-            }}
-            onChange={(e) => {
-              handleNit(e);
-            }}
-          />
-        </div>
-        <button className="newservRestauranteButton">Guardar</button>
-      </form>
+            <button className="newUserButton" color="secondary">
+              {" "}
+              Guardar{" "}
+            </button>
+          </form>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

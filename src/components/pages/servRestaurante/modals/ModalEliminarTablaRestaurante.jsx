@@ -15,7 +15,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="left" ref={ref} {...props} />;
 });
 
-export default function ModalEliminarTablaTurismo(tipo) {
+export default function ModalEliminarTablaRestaurante(tipo) {
   //BOOLEANO PARA ABRIR/CERRAR EL MODAL
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
@@ -38,7 +38,7 @@ export default function ModalEliminarTablaTurismo(tipo) {
           "Content-Type": "application/json",
         }
       };
-      fetch("http://localhost:3800/api/deleteTipoturismo/" + aux2, requesInit)
+      fetch("http://localhost:3800/api/deleteserv_restaurante/" + aux2, requesInit)
         .then((res) => res.json())
         .then((res) => {
           if (res) {
@@ -73,7 +73,7 @@ export default function ModalEliminarTablaTurismo(tipo) {
         maxWidth="xs"
       >
         <DialogTitle align="center">
-          <Typography>Eliminar Tipo de Turismo</Typography>
+          <Typography>Eliminar Restaurante</Typography>
         </DialogTitle>
         <Divider></Divider>
         <DialogContent>

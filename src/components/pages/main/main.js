@@ -26,10 +26,24 @@ function Main() {
   const [showRegister, setShowRegister] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
 
-  let navigate = useNavigate();
-  function handleClick() {
+  let navigate= useNavigate();
+  function handletablaTurismo() {
     navigate('/tablaTurismo')
   }
+  function handletablaAgencia() {
+    navigate('/tablaAgencia')
+  }
+  function handletablaServicio() {
+    navigate('/tablaServicio')
+  }
+  function handletablaHotel() {
+    navigate('/tablaHotel')
+  }
+  function handletablaRestaurante() {
+    navigate('/tablaRestaurante')
+  }
+ 
+  
  
   const handleMarkerClick = (id, lat, long) => {
     setCurrentPlaceId(id);
@@ -88,7 +102,7 @@ function Main() {
         width="100%"
         height="100%"
         transitionDuration="200"
-        mapStyle="mapbox://styles/safak/cknndpyfq268f17p53nmpwira"
+        mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={(viewport) => setViewport(viewport)}
         onDblClick={currentUsu_Nombre && handleAddClick}
       >
@@ -182,7 +196,11 @@ function Main() {
         )}
         {currentUsu_Nombre ? (
           <>
-          <button onClick={handleClick}> Agregar Tipo Turismo</button>
+          <button onClick={handletablaTurismo}> Ver Tipo Turismo</button>
+          <button onClick={handletablaAgencia}> Ver Agencias</button>
+          <button onClick={handletablaServicio}> Ver Tipo Servicios</button>
+          <button onClick={handletablaHotel}> Ver Hoteles</button>
+          <button onClick={handletablaRestaurante}> Ver Restaurantes</button>
           <button className="button logout" onClick={handleLogout}>
             Cerrar Sesion
           </button></>                
